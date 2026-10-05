@@ -1,6 +1,6 @@
 """
 src/interface.py - Rich Terminal User Interface (CLI_TUI Paradigm).
-Executive Experimentation & Retention Dashboard for Kake (GP-123).
+Executive Experimentation & Retention Dashboard for Product Analytics & Growth Engineering Practice (GP-123).
 """
 
 import os
@@ -30,7 +30,7 @@ console = Console(force_terminal=True)
 def run_cli():
     console.print()
     console.print(Panel(
-        "[bold cyan]KAKE - PRODUCT EXPERIMENTATION & RETENTION ENGINE (GP-123)[/bold cyan]\n"
+        "[bold cyan]Product Analytics & Growth Engineering Practice - PRODUCT EXPERIMENTATION & RETENTION ENGINE (GP-123)[/bold cyan]\n"
         "[dim]Causal CUPED Variance Reduction & Weibull Retention Modeling (Snowflake / Eppo Archetype)[/dim]",
         title="[bold green]Executive Terminal Interface[/bold green]",
         border_style="cyan",

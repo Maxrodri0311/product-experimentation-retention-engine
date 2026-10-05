@@ -1,15 +1,15 @@
-# 📐 SPEC & BLUEPRINT: Kake Product Experimentation & Retention Engine (GP-123)
+# 📐 SPEC & BLUEPRINT: Product Analytics & Growth Engineering Practice Product Experimentation & Retention Engine (GP-123)
 
-**Target Company:** Kake | **Target Role:** Senior Product Data Scientist  
+**Target Company:** Product Analytics & Growth Engineering Practice | **Target Role:** Senior Product Data Scientist  
 **Delivery Paradigm:** `CLI_TUI + Modern Lakehouse (Snowflake SQL / Superset Analytics)`  
 **Core Algorithm:** `CUPED Causal Variance Reduction + Weibull Hazard Survival`  
-**Repository Name:** `kake-product-experimentation-retention-engine`  
+**Repository Name:** `product-experimentation-retention-engine`  
 
 ---
 
 ## 🏛️ 1. The Core Business Bottleneck
 
-Kake experiences an estimated **$140,000 USD monthly revenue leakage** caused by two systemic product bottlenecks:
+Product Analytics & Growth Engineering Practice experiences an estimated **$140,000 USD monthly revenue leakage** caused by two systemic product bottlenecks:
 1. **Experimentation Velocity Deficit:** Conventional A/B tests require 4 to 6 weeks to achieve statistical significance due to unmitigated metric variance, delaying critical product decisions and causing sample ratio mismatch (SRM) vulnerabilities.
 2. **Onboarding Funnel Drop-off:** Approximately 38% of newly acquired users churn within the first 14 days post-signup without product teams having visibility into whether drop-offs stem from product friction or cohort baseline differences.
 
@@ -60,7 +60,7 @@ $$S(t) = \exp\left(-\left(\frac{t}{\lambda}\right)^k\right), \quad h(t) = \frac{
 
 ### ❓ Question 1: Why apply CUPED instead of standard two-sample t-test or Bayesian A/B testing?
 > **💡 Strategic Answer:**  
-> *"A naive two-sample t-test ignores pre-existing user variance, forcing Kake to run experiments for 28+ days to hit 80% power at $\alpha=0.05$. By leveraging pre-experiment session data as an optimal covariate, CUPED eliminates ~45% of outcome variance ($\text{Var}(\hat{Y}_{\text{CUPED}}) = \text{Var}(Y)(1 - \rho^2)$ with $\rho \approx 0.68$). This allows product managers to make go/no-go decisions in 9 to 11 days with identical statistical rigor, directly preserving development bandwidth."*
+> *"A naive two-sample t-test ignores pre-existing user variance, forcing Product Analytics & Growth Engineering Practice to run experiments for 28+ days to hit 80% power at $\alpha=0.05$. By leveraging pre-experiment session data as an optimal covariate, CUPED eliminates ~45% of outcome variance ($\text{Var}(\hat{Y}_{\text{CUPED}}) = \text{Var}(Y)(1 - \rho^2)$ with $\rho \approx 0.68$). This allows product managers to make go/no-go decisions in 9 to 11 days with identical statistical rigor, directly preserving development bandwidth."*
 
 ### ❓ Question 2: How does this integrate with Snowflake and Apache Superset?
 > **💡 Strategic Answer:**  

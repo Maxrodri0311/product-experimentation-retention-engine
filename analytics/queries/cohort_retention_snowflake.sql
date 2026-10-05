@@ -1,5 +1,5 @@
 -- ============================================================================
--- Kake Product Experimentation & Retention Engine (GP-123)
+-- Product Analytics & Growth Engineering Practice Product Experimentation & Retention Engine (GP-123)
 -- Snowflake Production Analytical SQL Pipeline: CUPED Variance Reduction & Cohorts
 -- Target Role: Product Data Scientist | Stack: Snowflake + Apache Superset + Eppo
 -- ============================================================================

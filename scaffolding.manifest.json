@@ -1,8 +1,8 @@
 {
   "project_id": "GP-123",
   "project_name": "kake_product_data_scientist_bridge_project",
-  "repo_name": "kake_product_experimentation_retention_engine",
-  "target_company": "Kake",
+  "repo_name": "product-experimentation-retention-engine",
+  "target_company": "Product Analytics & Growth Engineering Practice",
   "target_role": "Product Data Scientist",
   "paradigm": "DeliveryParadigm.CLI_TUI",
   "core_algorithm": "AlgorithmFamily.WEIBULL",

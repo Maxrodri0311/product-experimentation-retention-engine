@@ -1,5 +1,5 @@
 """
-src/core_engine.py - Core Analytical & Algorithmic Engine for Kake.
+src/core_engine.py - Core Analytical & Algorithmic Engine for Product Analytics & Growth Engineering Practice.
 Implements CUPED Variance Reduction, SRM Chi-Squared Detection, and Weibull Retention Modeling
 adhering strictly to Clean Architecture and the Dependency Inversion Principle (DIP).
 """
@@ -46,7 +46,7 @@ class DuckDBStorageAdapter:
 
 class DomainAnalyticsEngine:
     """
-    Decoupled Core Analytical Engine for Kake.
+    Decoupled Core Analytical Engine for Product Analytics & Growth Engineering Practice.
     Operates strictly via AnalyticalStorageProtocol without hardcoding database drivers.
     """
     def __init__(
@@ -258,7 +258,7 @@ if __name__ == "__main__":
     engine = create_engine(data_path=path)
     res = engine.execute_analysis()
     print("\n" + "="*80)
-    print("  KAKE PRODUCT EXPERIMENTATION & RETENTION ENGINE - (DIP / CUPED / WEIBULL)")
+    print("  Product Analytics & Growth Engineering Practice PRODUCT EXPERIMENTATION & RETENTION ENGINE - (DIP / CUPED / WEIBULL)")
     print("="*80)
     print(res.to_string(index=False))
     print("="*80 + "\n")

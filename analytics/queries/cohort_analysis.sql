@@ -1,5 +1,5 @@
 -- ============================================================================
--- Kake Product Analytics - Unified Cohort & Retention Analysis
+-- Product Analytics & Growth Engineering Practice Product Analytics - Unified Cohort & Retention Analysis
 -- Dialect: ANSI SQL / DuckDB / PostgreSQL Compatible
 -- ============================================================================
 

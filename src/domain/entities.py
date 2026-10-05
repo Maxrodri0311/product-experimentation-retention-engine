@@ -1,5 +1,5 @@
 """
-src/domain/entities.py - Pure domain models for Kake Product Experimentation & Retention Engine.
+src/domain/entities.py - Pure domain models for Product Analytics & Growth Engineering Practice Product Experimentation & Retention Engine.
 Strictly decoupled from external I/O, database drivers, or vendor SDKs.
 """
 

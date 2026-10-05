@@ -1,5 +1,5 @@
 <!-- [SYSTEM INSTRUCTION]
-Blueprint: GP-123 | Target: Kake - Product Data Scientist
+Blueprint: GP-123 | Target: Product Analytics & Growth Engineering Practice - Product Data Scientist
 Core Competencies: Causal A/B Experimentation, CUPED Variance Reduction, Weibull Time-to-Event Survival Modeling, Snowflake Data Warehousing, Apache Superset Cohort Visualizations, Terraform IaC, Clean Architecture & DIP.
 Latency Targets: CUPED Engine p95 < 25.0ms, DuckDB Windowing p95 < 25.0ms, Full Pipeline p95 < 450.0ms | RAM: < 256MB.
 Empirical Validation: 71.1% Variance Reduction (theta=0.873), SRM Chi-Square p=0.096 (healthy), Weibull Shape k=1.327, Scale lambda=48.7 days, D14 Retention=82.6%.
@@ -7,11 +7,11 @@ Empirical Validation: 71.1% Variance Reduction (theta=0.873), SRM Chi-Square p=0
 
 <div align="center">
 
-# Kake Product Experimentation & Retention Engine (`GP-123`)
+# Product Analytics & Growth Engineering Practice Product Experimentation & Retention Engine (`GP-123`)
 
 ### Enterprise Causal CUPED Variance Reduction & Parametric Weibull Lifecycle Platform
 
-[![CI & Mathematical Invariants](https://github.com/Maxrodri0311/kake_product_experimentation_retention_engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Maxrodri0311/kake_product_experimentation_retention_engine/actions)
+[![CI & Mathematical Invariants](https://github.com/Maxrodri0311/product-experimentation-retention-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Maxrodri0311/product-experimentation-retention-engine/actions)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
 [![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
@@ -27,7 +27,7 @@ Empirical Validation: 71.1% Variance Reduction (theta=0.873), SRM Chi-Square p=0
 
 ## 🏛️ 1. Executive Summary & The Business Bottleneck
 
-In high-growth digital product ecosystems like **Kake**, product iteration velocity is crippled by two structural compounding bottlenecks:
+In high-growth digital product ecosystems like **Product Analytics & Growth Engineering Practice**, product iteration velocity is crippled by two structural compounding bottlenecks:
 
 1. **High Sample Variance & Slow A/B Experimentation Velocity:**
    Evaluating product features (onboarding gamification, feature discovery modules) via standard two-sample hypothesis testing ($t$-test) requires **6 to 8 weeks of runtime** to achieve minimum statistical power ($1 - \beta = 0.80$). This sample-size requirement is inflated by substantial pre-experiment variance in user activity metrics. A slow experiment runtime directly causes feature backlog staleness, high opportunity costs, and delayed product validation.
@@ -35,7 +35,7 @@ In high-growth digital product ecosystems like **Kake**, product iteration veloc
    Product analytics indicates a steep drop-off between **Day 1 and Day 14**, where up to 38% of acquired users churn before reaching the core activation threshold. Standard aggregate cohort retention tables fail to model the continuous hazard rate, obscuring the precise time-to-event dynamics required for targeted automated lifecycle interventions.
 
 ### The Solution:
-This repository provides an enterprise, Staff-grade **Product Data Science Bridge Engine** tailored for **Kake**. It integrates:
+This repository provides an enterprise, Staff-grade **Product Data Science Bridge Engine** tailored for **Product Analytics & Growth Engineering Practice**. It integrates:
 - **CUPED (Controlled-experiment Using Pre-Experiment Data):** Exploits user pre-assignment historical variance ($X$) as an optimal control variate to purge up to **71.1% of outcome noise** ($Y$), cutting required sample size and experimentation runtime by more than half ($p < 0.001$).
 - **Sample Ratio Mismatch (SRM) Automated Gate:** Real-time Pearson $\chi^2$ goodness-of-fit test detecting algorithmic allocation skews before reporting treatment lifts.
 - **Parametric Weibull Hazard Modeling:** Continuous time-to-event survival modeling with MLE parameter estimation ($k = 1.327, \lambda = 48.7\text{ days}$), accurately modeling the increasing hazard rate during onboarding ($k > 1$) and forecasting Day 7, Day 14, and Day 30 milestones.
@@ -99,7 +99,7 @@ flowchart TD
 ## 📁 3. Repository Structure
 
 ```text
-kake_product_experimentation_retention_engine/
+product-experimentation-retention-engine/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml               # GitHub Actions CI matrix (Pytest + Benchmarks)
@@ -203,8 +203,8 @@ The entire end-to-end pipeline, test suite, and latency benchmark can be execute
 
 ### Windows (Native Batch):
 ```bash
-git clone https://github.com/Maxrodri0311/kake_product_experimentation_retention_engine.git
-cd kake_product_experimentation_retention_engine
+git clone https://github.com/Maxrodri0311/product-experimentation-retention-engine.git
+cd product-experimentation-retention-engine
 
 # Run complete pipeline: Dataset Generation -> Rich TUI -> Pytest (6/6) -> Benchmarks
 run_demo.bat

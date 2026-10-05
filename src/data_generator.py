@@ -1,6 +1,6 @@
 """
 src/data_generator.py - Calibrated Stochastic Domain Data Generator.
-Physics: CUPED Causal Experimentation & Weibull Retention Survival for Kake (GP-123).
+Physics: CUPED Causal Experimentation & Weibull Retention Survival for Product Analytics & Growth Engineering Practice (GP-123).
 Generates realistic A/B experiment telemetry and cohort survival curves with zero toy placeholders.
 """
 
@@ -21,7 +21,7 @@ def generate_domain_dataset(
     weibull_scale: float = 45.0,
 ) -> pd.DataFrame:
     """
-    Generates 50,000+ realistic product telemetry records for Kake A/B testing and retention modeling.
+    Generates 50,000+ realistic product telemetry records for Product Analytics & Growth Engineering Practice A/B testing and retention modeling.
     
     Mathematical Invariants:
     1. Pre-experiment covariate X: Log-Normal(3.2, 0.70) modeling baseline active minutes.
@@ -30,7 +30,7 @@ def generate_domain_dataset(
     3. Survival duration T: Weibull(shape=k, scale=lambda) modeling steep D1-D14 drop-off.
     4. Censoring: Window of 90 days. If T > 90, churn_observed = False (censored), duration = 90.0.
     """
-    print(f"[Data Generator] Generating {num_records:,} calibrated product events for Kake...")
+    print(f"[Data Generator] Generating {num_records:,} calibrated product events for Product Analytics & Growth Engineering Practice...")
     start_time = time.time()
     rng = np.random.default_rng(seed)
 
